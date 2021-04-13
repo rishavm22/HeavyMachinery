@@ -20,4 +20,5 @@
     <string name="product_id">Product Id</string>
     <string name="update">Update</string>
     <string name="back">Back</string>
+    <string name="long_press_to_delete">Long Press To Delete Item</string>
 </resources>

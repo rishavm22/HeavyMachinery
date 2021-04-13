@@ -17,6 +17,19 @@
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
+    <TextView
+        android:id="@+id/hintBox"
+        android:layout_below="@+id/w_message"
+        android:layout_above="@+id/listView"
+        android:visibility="gone"
+        android:text="@string/long_press_to_delete"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <ListView
         android:id="@+id/listView"
         android:visibility="gone"
@@ -24,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="15dp"/>
 

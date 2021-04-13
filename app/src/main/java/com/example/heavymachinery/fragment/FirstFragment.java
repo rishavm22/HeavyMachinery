@@ -33,7 +33,7 @@ public class FirstFragment extends Fragment {
     MyHelper helper;
     ArrayList<MyList> rows;
     ArrayList<Integer> productsIds;
-    TextView w_message;
+    TextView w_message,hintBox;
     ListView listView;
 
     MyListAdapter adapter;
@@ -49,6 +49,7 @@ public class FirstFragment extends Fragment {
 
         helper = new MyHelper(getContext());
         w_message = view.findViewById(R.id.w_message);
+        hintBox = view.findViewById(R.id.hintBox);
         listView = view.findViewById(R.id.listView);
 
         getData();
@@ -56,9 +57,11 @@ public class FirstFragment extends Fragment {
         if(availability){
             w_message.setVisibility(View.GONE);
             listView.setVisibility(View.VISIBLE);
+            hintBox.setVisibility(View.VISIBLE);
         }else{
             w_message.setVisibility(View.VISIBLE);
             listView.setVisibility(View.GONE);
+            hintBox.setVisibility(View.GONE);
         }
         return view;
     }
@@ -82,6 +85,7 @@ public class FirstFragment extends Fragment {
                 availability = true;
                 w_message.setVisibility(View.GONE);
                 listView.setVisibility(View.VISIBLE);
+                hintBox.setVisibility(View.VISIBLE);
 
                 res.moveToFirst();
                 while(!res.isAfterLast()){
