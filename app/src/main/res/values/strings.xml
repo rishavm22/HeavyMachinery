@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Heavy Machinery</string>
+    <string name="app_logo">app logo</string>
+    <string name="unavailable_message">No Machinery Available Please Try Later</string>
+    <string name="option_items">OptionItems</string>
+    <string name="add_item">Add Items</string>
+    <string name="delete_item">Delete Items</string>
+    <string name="update_item">Update Items</string>
+    <string name="name_hint">Enter Machinery Name</string>
+    <string name="model_number_hint">Enter Model Number</string>
+    <string name="stock_hint">Enter No of Items</string>
+    <string name="price_hint">Enter per unit price</string>
+    <string name="submit">Submit</string>
+    <string name="items_list">Items List</string>
+    <string name="update_title">List To Update</string>
+    <string name="selected_item_to_update">Selected Item To Update</string>
+    <string name="product_name">Product Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="product_id">Product Id</string>
+    <string name="update">Update</string>
+    <string name="back">Back</string>
+</resources>
