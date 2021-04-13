@@ -20,10 +20,7 @@ public class MyHelper extends SQLiteOpenHelper {
     public static final String Stock = "stock";
     public static final String Price = "price";
 
-
-
     public static final int version =1;
-
 
     //Create Table
     String createQuery = "create table " + TABLE_NAME + "(" + Id
@@ -38,7 +35,6 @@ public class MyHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(createQuery);
     }
-
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -90,13 +86,6 @@ public class MyHelper extends SQLiteOpenHelper {
         return db.rawQuery("select * from "+TABLE_NAME+" where "+Id+"= ?",new String[]{String.valueOf(id)},null);
     }
 
-    public void cleanData(String tableName){
-
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("DROP TABLE IF EXISTS "+tableName);
-
-    }
-
     public Boolean clearData(){
 
         SQLiteDatabase db = this.getWritableDatabase();
@@ -108,7 +97,4 @@ public class MyHelper extends SQLiteOpenHelper {
         }
 
     }
-
-
-
 }
